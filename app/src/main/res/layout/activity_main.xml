@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Search_location"
+        android:layout_marginTop="9dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="FragmentTagUsage,VisualLintBounds"
+        />
+
+    <Button
+        android:id="@+id/findLocationButton"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/Search_location"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="326dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/baseline_gps_fixed_24"
+        android:drawableTint="#FFFFFF"
+        android:gravity="right"
+        android:textColor="#FFFCFC"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFDFD"
+        android:textColorLink="#FFFFFF"
+        tools:ignore="RtlHardcoded,SpeakableTextPresentCheck,VisualLintButtonSize" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Search_location"
+        android:queryHint="Search"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:iconifiedByDefault="true"
+        android:elevation="10dp"
+        android:background="@drawable/bground" />
+
+
+</RelativeLayout>
